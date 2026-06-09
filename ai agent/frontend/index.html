@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manus AI - Less structure, more intelligence</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Markdown and Code Highlighting CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+<body>
+
+    <!-- ================= LANDING VIEW ================= -->
+    <div id="landing-view" class="view active">
+        <!-- Navigation Bar -->
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-icon-wrapper">
+                    <i data-lucide="zap" class="logo-icon"></i>
+                </div>
+                <span class="logo-text">Manus AI</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#pricing">Pricing</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-text">Sign in</button>
+                <button class="btn-primary" id="btn-launch-playground">Sign up</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="announcement-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Powered by Google Antigravity SDK</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    What can I do for <span id="dynamic-role" class="cyan-gradient-text">designers|</span>
+                </h1>
+                
+                <p class="hero-subtitle">Less structure, more intelligence.</p>
+
+                <!-- Centered vertical separator -->
+                <div class="hero-divider"></div>
+
+                <!-- Hero Feature Cards -->
+                <div class="action-grid">
+                    <div class="action-card">
+                        <i data-lucide="presentation" class="action-icon"></i>
+                        <span>Create slides</span>
+                    </div>
+                    <div class="action-card">
+                        <i data-lucide="layout" class="action-icon"></i>
+                        <span>Build website</span>
+                    </div>
+                    <div class="action-card">
+                        <i data-lucide="terminal" class="action-icon"></i>
+                        <span>Develop apps</span>
+                    </div>
+                    <div class="action-card">
+                        <i data-lucide="palette" class="action-icon"></i>
+                        <span>AI Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="features-grid">
+                <!-- Card 1: Browser Agent -->
+                <div class="feature-card large-card browser-agent">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <i data-lucide="monitor" class="meta-icon"></i>
+                            <span>BROWSER AGENT</span>
+                        </div>
+                        <h2 class="card-title">Autonomous Navigation</h2>
+                        <p class="card-desc">Manus can operate browsers directly, filling forms, gathering data, and executing tasks just as a human would, but at machine speed.</p>
+                    </div>
+                    <div class="card-preview browser-preview">
+                        <div class="browser-header">
+                            <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <div class="browser-address">https://manus.ai/dashboard</div>
+                        </div>
+                        <div class="browser-body">
+                            <div class="chart-container">
+                                <div class="chart-y-axis">
+                                    <span>100</span><span>50</span><span>0</span>
+                                </div>
+                                <div class="chart-bars">
+                                    <div class="bar-col"><div class="bar" style="height: 40%"></div><span>2022</span></div>
+                                    <div class="bar-col"><div class="bar" style="height: 60%"></div><span>2023</span></div>
+                                    <div class="bar-col"><div class="bar active" style="height: 85%"></div><span>2024</span></div>
+                                    <div class="bar-col"><div class="bar active" style="height: 100%"></div><span>2025</span></div>
+                                </div>
+                            </div>
+                            <!-- Cursor representation -->
+                            <div class="cursor-mock">
+                                <i data-lucide="mouse-pointer-2" class="cursor-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Research -->
+                <div class="feature-card research-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <i data-lucide="search" class="meta-icon"></i>
+                            <span>RESEARCH</span>
+                        </div>
+                        <h2 class="card-title">Wide Research</h2>
+                        <p class="card-desc">Sift through thousands of sources in seconds to find the precise intelligence you need for your business.</p>
+                    </div>
+                    <div class="card-preview search-preview">
+                        <div class="search-skeleton">
+                            <div class="skeleton-line full"></div>
+                            <div class="skeleton-line half"></div>
+                            <div class="skeleton-line short"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Integrations -->
+                <div class="feature-card integrations-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <i data-lucide="toy-brick" class="meta-icon"></i>
+                            <span>INTEGRATIONS</span>
+                        </div>
+                        <h2 class="card-title">Slack & Mail</h2>
+                        <p class="card-desc">Connect Manus directly to your existing workspace. It reads, understands, and replies within your current flow.</p>
+                    </div>
+                    <div class="card-preview integrations-preview">
+                        <div class="integration-icon-group">
+                            <div class="integration-bubble slack"><i data-lucide="slack"></i></div>
+                            <div class="integration-bubble mail"><i data-lucide="mail"></i></div>
+                            <div class="integration-bubble connection"><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Development -->
+                <div class="feature-card large-card dev-card">
+                    <div class="card-header">
+                        <div class="card-meta">
+                            <i data-lucide="code-xml" class="meta-icon"></i>
+                            <span>DEVELOPMENT</span>
+                        </div>
+                        <h2 class="card-title">Infinite Coding</h2>
+                        <p class="card-desc">From simple landing pages to complex desktop applications, Manus writes production-ready code in real-time.</p>
+                    </div>
+                    <div class="card-preview code-preview">
+                        <pre><code class="language-python">class ManusAgent:
+    def __init__(self):
+        self.intelligence = "Maximum"
+
+    def execute_task(self, prompt):
+        return self.generate_result(prompt)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="logo-container">
+                    <div class="logo-icon-wrapper">
+                        <i data-lucide="zap" class="logo-icon"></i>
+                    </div>
+                    <span class="logo-text">Manus AI</span>
+                </div>
+                <p class="footer-copyright">© 2026 Manus AI.<br>Intelligence in the Void.</p>
+                <div class="social-icons">
+                    <a href="#"><i data-lucide="globe"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h3>PRODUCT</h3>
+                    <a href="#">Pricing</a>
+                    <a href="#">AI Design</a>
+                    <a href="#">Web App</a>
+                    <a href="#">Browser Op</a>
+                </div>
+                <div class="footer-column">
+                    <h3>RESOURCES</h3>
+                    <a href="#">Blog</a>
+                    <a href="#">Docs</a>
+                    <a href="#">API</a>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="footer-column">
+                    <h3>COMMUNITY</h3>
+                    <a href="#">Events</a>
+                    <a href="#">Fellows</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="footer-column">
+                    <h3>BUSINESS</h3>
+                    <a href="#">Team Plan</a>
+                    <a href="#">Startups</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- ================= PLAYGROUND VIEW ================= -->
+    <div id="playground-view" class="view hidden">
+        <div class="playground-layout">
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-top">
+                    <!-- Brand -->
+                    <div class="sidebar-brand" id="btn-back-to-landing">
+                        <div class="brand-icon-wrapper">
+                            <i data-lucide="zap" class="brand-icon"></i>
+                        </div>
+                        <span class="brand-name">Manus</span>
+                    </div>
+
+                    <!-- New Chat CTA -->
+                    <button class="btn-new-chat" id="btn-new-chat">
+                        <i data-lucide="plus"></i>
+                        <span>New Chat</span>
+                    </button>
+
+                    <!-- Recent chats list -->
+                    <div class="recent-chats">
+                        <div class="recent-title">RECENT</div>
+                        <div class="recent-list" id="recent-chats-list">
+                            <div class="recent-item active" data-chat-id="chat-1">
+                                <i data-lucide="message-square-more"></i>
+                                <span class="recent-text">Market Research: AI Agents</span>
+                            </div>
+                            <div class="recent-item" data-chat-id="chat-2">
+                                <i data-lucide="message-square-more"></i>
+                                <span class="recent-text">Neural Network Architecture</span>
+                            </div>
+                            <div class="recent-item" data-chat-id="chat-3">
+                                <i data-lucide="message-square-more"></i>
+                                <span class="recent-text">Python Scripting for Automat...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar profile at bottom -->
+                <div class="sidebar-profile">
+                    <div class="profile-avatar">FA</div>
+                    <div class="profile-info">
+                        <div class="profile-name">Felix Arvid</div>
+                        <div class="profile-plan">PRO PLAN</div>
+                    </div>
+                    <button class="btn-settings" title="Settings">
+                        <i data-lucide="settings"></i>
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Main Chat Panel -->
+            <main class="chat-panel">
+                <!-- Header -->
+                <header class="chat-header">
+                    <div class="chat-title-container">
+                        <h2 class="chat-active-title" id="chat-title">Market Research: AI Agents</h2>
+                        <span class="chat-status-badge">
+                            <span class="status-dot pulsing"></span>
+                            Analysis Active
+                        </span>
+                    </div>
+                    <div class="chat-header-actions">
+                        <button class="btn-header-action" title="Share Chat">
+                            <i data-lucide="share-2"></i>
+                            <span>Share</span>
+                        </button>
+                        <button class="btn-header-action" title="Chat History">
+                            <i data-lucide="history"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Messages container -->
+                <div class="messages-viewport" id="messages-container">
+                    <!-- Default initial messages for active chat, will be handled dynamically in JS -->
+                </div>
+
+                <!-- Input area container -->
+                <div class="input-panel-container">
+                    <!-- Quick action pills -->
+                    <div class="quick-pills-row">
+                        <button class="pill-btn" data-prompt="Perform deep research on ">
+                            <i data-lucide="search-code"></i>
+                            Deep Research
+                        </button>
+                        <button class="pill-btn" data-prompt="Analyze this PDF: ">
+                            <i data-lucide="file-text"></i>
+                            Analyze PDF
+                        </button>
+                        <button class="pill-btn" data-prompt="Generate python code to ">
+                            <i data-lucide="code"></i>
+                            Generate Code
+                        </button>
+                    </div>
+
+                    <!-- Input box -->
+                    <div class="input-box-wrapper">
+                        <button class="btn-input-attach" title="Attach Files">
+                            <i data-lucide="paperclip"></i>
+                        </button>
+                        <button class="btn-input-web" id="btn-toggle-web" title="Toggle Search Web">
+                            <i data-lucide="globe"></i>
+                        </button>
+                        
+                        <textarea class="chat-textarea" id="chat-input" placeholder="Ask Manus anything..." rows="1"></textarea>
+                        
+                        <button class="btn-send-message" id="btn-send" disabled>
+                            <i data-lucide="arrow-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
